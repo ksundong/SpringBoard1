@@ -31,4 +31,10 @@ dependencies {
     implementation name: 'ojdbc8'
     testImplementation name: 'ojdbc8'
     testCompile name: 'ojdbc8'
+    // https://mvnrepository.com/artifact/com.zaxxer/HikariCP
+    compile group: 'com.zaxxer', name: 'HikariCP', version: '2.7.4'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    // SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+    // https://stackoverflow.com/questions/7421612/slf4j-failed-to-load-class-org-slf4j-impl-staticloggerbinder
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.27'
 }
